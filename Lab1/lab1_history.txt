@@ -1,0 +1,156 @@
+    1  ping ya.ru
+    2  sudo
+    3  history > lab1_history.txt
+    4  ping
+    5  sudo id
+    6  sudo less /var/log/messages
+    7  less /var/log/messages
+    8  whoami
+    9  history > lab1_history.txt
+   10  exit
+   11  --list-all
+   12  --help
+   13  --verision
+   14  echo "it's hard to do that"
+   15  echo 'it'\''s hard to do that'
+   16  echo '"Пример текста в кавычках"'
+   17  # Comment
+   18  '# эта стровка не комментарий'
+   19  echo '# эта стровка не комментарий'
+   20  whoami
+   21  root
+   22  whoaim
+   23  whoami
+   24  echo "Hello World"
+   25  echo Hello World
+   26  date
+   27  cal
+   28  man cal
+   29  cal -3
+   30  history
+   31  clear
+   32  pwd
+   33  cd /
+   34  pwd
+   35  cd ..
+   36  pwd
+   37  ls
+   38  ls /var
+   39  cd ~
+   40  pwd
+   41  cd
+   42  pwd
+   43  cd ..
+   44  pwd
+   45  ls
+   46  man ls
+   47  ls -l
+   48  cd
+   49  mkdir fruits
+   50  cd /
+   51  mkdir ~/animals
+   52  touch /tmp/temp
+   53  cd /fruits
+   54  cd ./fruits
+   55  pwd
+   56  cd
+   57  cd fruits
+   58  pwd
+   59  touch apple
+   60  touch banana
+   61  touch pineaple
+   62  touch lion
+   63  touch ~/animals/cat.txt
+   64  touch ~/animals/dog.txt
+   65  touch ~/animals/elephant.txt
+   66  man date
+   67  tune2fs -l apple
+   68  -l apple
+   69  ls -lh apple
+   70  ls b*
+   71  ls *a
+   72  ls [bi]*
+   73  ls b* i*
+   74  ls *i*
+   75  ls *b*
+   76  cd
+   77  pwd
+   78  cp /etc/passwd ~
+   79  cat /etc/issue
+   80  pwd
+   81  cp /etc/issue ~/fruits/apple
+   82  cat fruits/apple
+   83  mv fruits/lion animals
+   84  mv fruits/pineaple fruits/pineapple<CR>
+   85  cd fruits
+   86  mv pineaple pineapple
+   87  man wc
+   88  wc -l /etc/passwd
+   89  cd
+   90  ln -s /etc/passwd passwd_link
+   91  ln .bash_history history_hard
+   92  ls -l ~/.bash_history
+   93  ls
+   94  ls -l passwd_link
+   95  rm fruits/apple
+   96  mkdir rmme
+   97  rmdir rmme
+   98  ls
+   99  rmdir fruits
+  100  rm -fr fruits
+  101  cat /etc/passwd /var/log/boot.log
+  102  cp /etc/init.d/ ~
+  103  cp -r /etc/init.d/ ~
+  104  ls
+  105  rmdir -fr init.d
+  106  rm -fr init.d
+  107  man cut
+  108  cut -d: -f1 /etc/passwd | sort
+  109  man less
+  110  man column
+  111  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  112  cut -d: -f1,3 /etc/passwd | column -ts: | less
+  113  grep :/bin/bash /etc/passwd | wc -l
+  114  man grep
+  115  grep :/bin/bash /etc/passwd | cut -d: -f1 /etc/passwd | sort
+  116  grep :/bin/bash /etc/passwd 
+  117  grep :/bin/bash /etc/passwd | cut -d: -f1
+  118  man sort
+  119  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  120  man wc
+  121  man -n
+  122  man n
+  123  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n25
+  124  man head
+  125  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+  126  man sort
+  127  top -b -n1 | sort
+  128  top -b -n1 | sort -k12
+  129  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' '\t' | cut -f11,5
+  130  cat /etc/passwd | tr ":" " " | sort
+  131  cut -d: -f1,7 /etc/passwd | column -ts: | sort
+  132  cd /usr/share/doc/git-*
+  133  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  134  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  135  tr '[:lower:]' ' [:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  136  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  137  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn |head
+  138  ping ya.ru
+  139  curl wttr.in
+  140  curl ya.ru
+  141  hostname -I
+  142  curl ifconfig.me
+  143  cd
+  144  man wget
+  145  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  146  ls
+  147  less README-ru.md
+  148  id
+  149  whoami
+  150  sudo
+  151  sudo root
+  152  sudo -i
+  153  usermod -aG wheel vladis
+  154  sudo su
+  155  su
+  156  history > lab1_history.txt
