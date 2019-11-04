@@ -1,0 +1,67 @@
+  157  cd ~
+  158  mkdir test
+  159  cd test
+  160  touch file
+  161  su
+  162  cat file
+  163  ls
+  164  cd test
+  165  ls
+  166  cat file
+  167  su
+  168  cat file
+  169  ls -lR > lab2_ls_lR.txt
+  170  ls -lR > test/lab2_ls_lR.txt
+  171  ls -lR
+  172  cd ~
+  173  ls -lR > lab2_ls_lR.txt
+  174  history > lab2_history.txt
+  175  cd
+  176  ll file
+  177  ls
+  178  cd test
+  179  ls
+  180  ll file
+  181  chmod ugo -rwx file
+  182  chmod ugo-rwx file
+  183  echo "test" > file
+  184  cat file
+  185  chmod u+w file
+  186  ll file
+  187  echo "test" > file
+  188  cat file
+  189  chmod g+r file
+  190  ll file
+  191  cat file
+  192  chmod u+r file
+  193  ls -l file
+  194  cat file
+  195  mkdir dir
+  196  cd dir
+  197  touch new_file
+  198  echo "file 2" > new_file
+  199  ls
+  200  cd ..
+  201  ls
+  202  ll dir
+  203  cat dir/new_file
+  204  chmod ugo-x dir
+  205  cat dir/new_file
+  206  ll dir
+  207  rm dir/new_file
+  208  chown root file
+  209  chown :root file
+  210  chgrp root file
+  211  man umask
+  212  umask
+  213  umask 077
+  214  touch file1
+  215  ls-l file1
+  216  ls -l file1
+  217  umask 000
+  218  touch file2
+  219  ls -l file2
+  220  cd ~
+  221  mkdir Lab2
+  222  cd Lab2
+  223  history > lab2_history.txt

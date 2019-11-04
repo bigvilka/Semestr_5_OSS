@@ -1,0 +1,11 @@
+.:
+итого 4
+drw-rw-r--. 2 vladis vladis 22 ноя  4 13:20 dir
+-r--r-----. 1 root   vladis  5 ноя  4 13:09 file
+-rw-------. 1 vladis vladis  0 ноя  4 13:33 file1
+-rw-rw-rw-. 1 vladis vladis  0 ноя  4 13:33 file2
+-rw-rw-r--. 1 vladis vladis  0 ноя  4 13:40 lab2_ls_lR.txt
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file

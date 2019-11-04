@@ -1,0 +1,23 @@
+    1  usermod -aG wheel vladis
+    2  id
+    3  su - vladis
+    4  cd
+    5  ls
+    6  cd /
+    7  cd home
+    8  ls
+    9  cd vladis
+   10  ls
+   11  cd test
+   12  ls
+   13  chown root file
+   14  chmod 400 file
+   15  exit
+   16  cd home/vladis/test
+   17  cd /
+   18  cd home/vladis/test
+   19  chmod g+r file
+   20  exit
+   21  ls
+   22  cd Lab2
+   23  history > lab2_history_root.txt
